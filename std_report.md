@@ -1,4 +1,6 @@
-## std
+# std
+
+## std の基本のコード?
 stdについて簡単にまとめてみました。  
 簡単に調べただけなので、指摘等お願いします。
 
@@ -32,10 +34,28 @@ stdについて簡単にまとめてみました。
 |入力演算子|>>|右シフト|演算子|
 
  
+## using namespace を使用したコード
 
+使用例が以下のコードになります。
 
+![](https://github.com/hiroto1130/image_preservation/blob/master/std/std%202.png?raw=true)
 
+using namespace std;
+上記のコードで、std 名前空間をデフォルトで参照可能（可視状態）にすることが出来ます。
 
+なので、基本は  
+
+#include "iostream"  
+using namespace std;  
+
+を使うのが一般的とか、サイトには書いてありました。  
+
+## 変数について
+
+変数を表示させたい場合、以下のコードの様に、 << HP << と書く必要があるみたいです。  
+なので、「"体力は %d です",HP」と表記させていたのが、「"体力は" << HP << "です"」という風に書かないと駄目？みたいです。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/std/std%203.png?raw=true)
 
 
 
